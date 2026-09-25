@@ -101,3 +101,18 @@ explainable-ai-stock/
 │
 ├── .gitignore
 └── README.md
+React
+   ↓
+localhost:5173
+
+Node + Express
+   ↓
+localhost:5000
+
+Python ML
+   ↓
+localhost:8000
+
+MongoDB
+   ↓
+localhost:27017
