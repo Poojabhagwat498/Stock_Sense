@@ -101,6 +101,62 @@ explainable-ai-stock/
 │
 ├── .gitignore
 └── README.md
+
+
+React
+   ↓
+localhost:5173
+
+Node + Express
+   ↓
+localhost:5000
+
+Python ML
+   ↓
+localhost:8000
+
+MongoDB
+   ↓
+localhost:27017
+
+20. Run the complete project
+
+You will normally use 3 VS Code terminals.
+
+Terminal 1 — MongoDB
+
+If MongoDB is installed locally:
+
+mongod
+
+Or use MongoDB Atlas and put the Atlas connection string in .env.
+
+Terminal 2 — Python ML
+cd explainable-ai-stock\ml-service
+
+.venv\Scripts\Activate.ps1
+
+uvicorn app.main:app --reload --port 8000
+Terminal 3 — Node/Express
+cd explainable-ai-stock\server
+
+npm run dev
+
+Add this to server/package.json:
+
+{
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    }
+}
+Terminal 4 — React
+cd explainable-ai-stock\client
+
+npm run dev
+
+You'll have:
+
 React
    ↓
 localhost:5173
